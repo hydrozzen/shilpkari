@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shilpkari - Wedding Invitations & Event Services</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('wedding-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #f0a500;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #d88d00;
+        }
+
+        /* About Us Section */
+        #about-us {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #about-us h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #about-us p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        #services {
+            padding: 60px 20px;
+        }
+
+        #services h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .service-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .service-item h3 {
+            margin: 15px 0;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #eee;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonials p {
+            font-style: italic;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p,
+        footer a {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        footer a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            background-color: #555;
+            font-size: 1.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #f0a500;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Shilpkari</h1>
+        <p>Designing Invitations, Capturing Moments, & Creating Unforgettable Memories</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Let Us Bring Your Dream Event to Life</h1>
+            <p>Custom Invitations, Wedding Photography, Videos & More!</p>
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Shilpkari</h2>
+        <p>At Shilpkari, we specialize in creating custom invitations, unforgettable photos, cinematic videos, and personalized accessories for your special occasions. Whether it’s a wedding, birthday, or corporate event, we turn your vision into reality.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <img src="invitation-card.jpg" alt="Invitation Card Design">
+                <h3>Customized Invitations</h3>
+                <p>Beautifully crafted invitations that reflect your unique style.</p>
+            </div>
+            <div class="service-item">
+                <img src="video-production.jpg" alt="Video Production">
+                <h3>Cinematic Videos</h3>
+                <p>Wedding films and event highlights that capture your memories in motion.</p>
+            </div>
+            <div class="service-item">
+                <img src="photography.jpg" alt="Photography">
+                <h3>Wedding Photography</h3>
+                <p>Professional photoshoots for weddings, pre-weddings, and more.</p>
+            </div>
+            <div class="service-item">
+                <img src="accessories.jpg" alt="Accessories Customization">
+                <h3>Accessories Customization</h3>
+                <p>Personalized accessories to complement your event theme.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"Shilpkari made our wedding day truly magical! The invitations were stunning, and the photos & video captured every perfect moment." - Emily & James</p>
+        <p>"Highly recommended! The personalized accessories added such a unique touch to our event." - Priya & Raj</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>Get in Touch</h2>
+        <p>Address: 123 Wedding Street, Event City, Country</p>
+        <p>Email: contact@shilpkari.com | Phone: +123 456 7890</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/11234567890" class="whatsapp-btn" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
